@@ -1,0 +1,222 @@
+body {
+    font-size: 15pt;
+    background-color: #000;
+
+} 
+
+.container{
+  color: white;
+  max-width: 1280px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.top-nav{
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  z-index: 99;
+  right: 0%;
+  padding: 16px 32px;
+  background-color: black;
+  border-bottom: none;
+}
+
+.hamburger{
+  display: block;
+  position: relative;
+  padding-top: 9px;
+  
+  z-index: 1;
+  
+  user-select: none;
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.hamburger span{
+  display: block;
+  
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background-color: #FfF;
+  border-radius: 6px;
+  
+  transform-origin: 0 0;
+  
+  transition: 0.4s;
+}
+
+.hamburger span:nth-child(2){
+  transform: translateX(10px);
+  background-color: #74D1FF;
+}
+
+.hamburger.is-active span:nth-child(1){
+  transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2){
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+.hamburger.is-active span:nth-child(3){
+  transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.is-active:hover span{
+  background-color: white;
+}
+
+.menu{
+  display: none;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  margin: 0 -16px;
+  margin-top: 17px;
+  padding-left: 10px;
+}
+.menu a {
+  color: #fff;
+  margin: 0 12px;
+  font-weight: 600;
+  font-size: 38px;
+  font-family: 'IBM Plex Sans Devanagari', sans-serif;
+  text-decoration: none;
+  transition: 0.4s;
+  cursor: none;
+  padding: 8px 16px;
+}
+.menu a:hover{
+  background-color: #5DC7FB;
+  cursor: none;
+ 
+ border-radius: 12px;
+}
+h1 a{
+  text-decoration: none;
+  color: #fff;
+  cursor: none;
+  font-size: 80px;
+  font-family: 'Raleway', sans-serif;
+}
+h1 span{
+  color: #6CCEFD;
+}
+.headcolor{
+  color: #6FD0FFF0;
+}
+.log{
+  background-color: black;
+  border: solid;
+  border-color: #7FD2FA;
+  border-radius: 20px;
+  font-size: 25px;
+  border-width: 4px;
+  font-family: 'IBM Plex Sans Devanagari', sans-serif;
+  font-weight: bold;
+  color: white;
+  width: 150px;
+}
+
+.mobile_nav{
+  display: none;
+}
+
+.mobile_nav.is-active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  padding-top: 70px;
+  transition: 0.4s ease-in-out;
+  background-color: #000;
+  margin-top: 90px;
+}
+
+.mobile_nav.is-active a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'IBM Plex Sans Devanagari', sans-serif;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto 30px;
+  transition: 0.4s;
+  cursor: none;
+  width: 100%;
+  max-width: 150px;
+}
+
+.mobile_nav.is-active a:hover{
+  background-color: #5DC7FB;
+  border-radius: 12px;
+  cursor: none;
+}
+
+.details{
+  margin-top: 250px;
+  margin-left: 20px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+}
+.sign-upb{
+  background-color: #5DC7FB;
+  color: white;
+  font-size: 45px;
+  font-family: 'IBM Plex Sans Devanagari', sans-serif;
+  font-weight: bolder;
+  
+  border: solid;
+  border-color: #5DC7FB;
+  border-radius: 25px;
+  
+  height: 80px;
+  width: 350px;
+  
+}
+.aboutdiv{
+  text-align: center;
+  margin-top: 100px;
+}
+.aboutHeading{
+  color: #fff;
+  font-size: 95px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+.no_show.is-active{
+  display: none;
+}
+@media(min-width : 768px){
+  .hamburger{
+    display: none;
+  }
+  .menu{
+    display: block;
+    display: flex;
+  }
+}
+@media (max-width : 768px){
+  h1 a {
+    font-size: 49px;
+  }
+  .details{
+    font-size: 80px;
+    margin-top: 180px;
+  }
+}

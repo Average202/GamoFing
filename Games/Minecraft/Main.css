@@ -1,0 +1,129 @@
+body{
+  background-color: black;
+  color: white;
+}
+header{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+header span{
+  color: #5AC9FF;
+  font-weight: bold;
+}
+p a{
+  text-decoration: none;
+  color: #4BC4FF;
+  font-size: 20px;
+}
+.uppernav{
+  text-align: center;
+  font-family: 'Radio Canada', sans-serif;
+}
+.logom{
+  width: 180px;
+  height: 173px;
+}
+.gameinfo{
+  text-align: center;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+.tabled{
+  margin-top: 10px;
+}
+table{
+  border-top: 0px solid #121212;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td{
+  padding: 15px;
+}
+
+td{
+  padding-left: 40px;
+}
+tr:nth-child(even){
+  background-color: #121212;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  margin-top: 30px;
+  width: 90%;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.aboutgame{
+  margin-top: 70px;
+  font-family: 'Radio Canada', sans-serif;
+}
+.aboutgame p{
+  padding-top: 2px;
+}
+.aboutgame strong{
+  border-bottom: 1px solid white;
+}
+#at{
+  font-size: 18px;
+}
+.aboutgame a{
+  color: #766BFE;
+}
+@media(min-width:768px){
+  header{
+    font-size: 120px;
+  }
+  .uppernav{
+    font-size: 50px;
+  }
+  .uppernav a{
+    font-size: 50px;
+  }
+  .gameinfo h2{
+    font-size: 50px;
+  }
+  .playl{
+   
+  }
+  .logom{
+    width: 420px;
+    height: 380px;
+  }
+  table{
+    font-size: 30px;
+  }
+  .btn{
+    font-size: 40px;
+    width: 60%;
+    border-radius: 12px;
+  }
+  #at{
+    font-size: 35px;
+  }
+  .aboutgame p{
+    font-size: 30px;
+  }
+  .aboutgame h4{
+    font-size: 45px;
+  }
+  .aboutgame h3{
+    font-size: 45px;
+  }
+  .aboutgame strong{
+    font-size: 30px;
+  }
+  .aboutgame a{
+    font-size: 25px;
+  }
+}

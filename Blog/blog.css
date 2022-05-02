@@ -1,0 +1,30 @@
+body{
+  background-color: #000;
+}
+header{
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+}
+header span{
+  color: #5AC9FF;
+}
+
+body p{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  padding-top: 50px;
+  font-family: 'IBM Plex Sans Devanagari', serif;
+}
+
+@media(min-width: 768px){
+  header{
+    font-size: 150px;
+  }
+  body p{
+    font-size: 130px;
+  }
+}
